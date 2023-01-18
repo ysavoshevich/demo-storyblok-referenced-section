@@ -1,0 +1,19 @@
+@import "@styles/variables.scss";
+@import "@styles/mixins.scss";
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: $gainsboro;
+  height: 32rem;
+  a {
+    text-decoration: underline;
+  }
+}
+.info__title {
+  margin-bottom: 1rem;
+}
+.info__text {
+  margin-bottom: 1rem;
+}

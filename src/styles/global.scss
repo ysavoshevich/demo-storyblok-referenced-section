@@ -1,0 +1,46 @@
+@import "variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Aeonik, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: $space-cadet;
+  font-size: 1rem;
+  line-height: 1.3em;
+  @include pre-tablet {
+    font-size: 1.125em;
+  }
+}
+
+a {
+  color: $space-cadet;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button {
+  color: $space-cadet;
+}

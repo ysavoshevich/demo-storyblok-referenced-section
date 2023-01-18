@@ -1,0 +1,101 @@
+@import "functions.scss";
+
+/**
+ * TABLE OF CONTENTS
+ * 
+ * COLORS
+ * Brand colors
+ * Utility colors
+ *
+ * BREAKPOINTS
+ * 
+ * Other
+**/
+
+/*=============================================
+=                  Colors                     =
+=============================================*/
+
+/* Brand Colors */
+$space-cadet: #243048;
+$space-cadet-700: #475777;
+$space-cadet-600: #586a8e;
+$space-cadet-500: #67789f;
+$space-cadet-400: #92a1c3;
+$space-cadet-300: #afbcda;
+$space-cadet-100: #cad7f1;
+$blue: #0f2885;
+$blue-800: #203a9a;
+$blue-600: #334fb2;
+$blue-500: #3957bc;
+$gainsboro: #e6ebee;
+$isabelline: #faf5f0;
+
+/* Utility Colors */
+$gray-light: #f3f5f7;
+$gray: #cccfd6;
+$gray-dark: #757d8c;
+$gray-blue: #99a3bb;
+$white: #ffffff;
+$red: #e71e1e;
+$red-light: #ff4141;
+$divider: #e5e9f1;
+
+/*=============================================
+=            Breakpoints                      =
+=============================================*/
+
+$breakpoints: (
+  // extra small
+  // 320px
+  "xs": 20rem,
+  "xs-px": 320,
+  // pre-tablet
+  // 576px
+  "sm": 36rem,
+  "sm-px": 576,
+  // tablet
+  // 768px
+  "md": 48rem,
+  "md-px": 768,
+  // laptop
+  // 1024px
+  "lg": 64rem,
+  "lg-px": 1024,
+  // desktop
+  // 1280px
+  "xl": 80rem,
+  "xl-px": 1280,
+  // large
+  // 1440px
+  "2xl": 90rem,
+  "2xl-px": 1440,
+  // extra-large
+  // 1680px
+  "3xl": 105rem,
+  "3xl-px": 1680,
+  // widescreen
+  // 1920px
+  "xxl": 120rem,
+  "xxl-px": 1920
+);
+
+/*=============================================
+=                  Other                     =
+=============================================*/
+
+$container-padding-sm: 1rem;
+$container-padding-md: 2rem;
+$container-padding-3xl: get-extra-large-font-size(32);
+$tight-container-padding-md: 4.5rem;
+$tight-container-padding-3xl: get-extra-large-font-size(72);
+$page-top-banner-height-sm: 168px;
+$page-top-banner-height-md: 100px;
+$header-height-sm: 4.425rem;
+$header-height-md: 6rem;
+$header-height-3xl: get-extra-large-font-size(96);
+$link-hover-opacity: 0.65;
+
+$insights-list-row-gap: 1.625rem;
+
+$common-line-break-margin: 0.5rem;

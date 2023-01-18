@@ -1,0 +1,16 @@
+@import "@styles/variables.scss";
+@import "@styles/mixins.scss";
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $isabelline;
+  height: 4rem;
+}
+.nav__links {
+  display: flex;
+  list-style: none;
+  li {
+    margin-right: 1rem;
+  }
+}

@@ -1,0 +1,60 @@
+@use "sass:math";
+
+/* calculates viewport values given a base pixel value and a breakpoint */
+
+@function vw($px-value, $breakpoint) {
+  $vw-value: math.div($px-value, $breakpoint) * 100;
+  @return $vw-value;
+}
+
+/* calculates rem values given a base pixel value and a default rem value of 16px */
+
+@function rem($px-value) {
+  $rem-value: math.div($px-value, 16);
+  @return $rem-value;
+}
+
+/* sass has no function for rounding to fixed number of decimal points
+(copied from: https://stackoverflow.com/a/34982673) */
+
+@function decimal-round($number, $digits: 0, $mode: round) {
+  $n: 1;
+  // $number must be a number
+  @if type-of($number) != number {
+    @warn '#{ $number } is not a number.';
+    @return $number;
+  }
+  // $digits must be a unitless number
+  @if type-of($digits) != number {
+    @warn '#{ $digits } is not a number.';
+    @return $number;
+  } @else if not unitless($digits) {
+    @warn '#{ $digits } has a unit.';
+    @return $number;
+  }
+  @if $digits > 0 {
+    @for $i from 1 through $digits {
+      $n: $n * 10;
+    }
+  }
+  @if $mode == round {
+    @return calc(round($number * $n) / $n);
+  } @else if $mode == ceil {
+    @return calc(ceil($number * $n) / $n);
+  } @else if $mode == floor {
+    @return calc(floor($number * $n) / $n);
+  } @else {
+    @warn '#{ $mode } is undefined keyword.';
+    @return $number;
+  }
+}
+
+@function get-font-size($px-value, $breakpoint) {
+  $res: calc(#{decimal-round(vw($px-value, $breakpoint), 2)}vw);
+  @return $res;
+}
+
+@function get-extra-large-font-size($px-value) {
+  $res: get-font-size($px-value, map-get($breakpoints, "3xl-px"));
+  @return $res;
+}

@@ -1,0 +1,393 @@
+.heading-xxl {
+  font-weight: 500;
+  font-size: 1.875rem;
+  line-height: 0.95em;
+  @include pre-tablet {
+    font-size: 3.25rem;
+  }
+  @include extra-large {
+    font-size: get-extra-large-font-size(52);
+  }
+}
+.heading-xl {
+  font-weight: 500;
+  font-size: 1.625rem;
+  line-height: 1.05em;
+  @include pre-tablet {
+    font-size: 2.75rem;
+    line-height: 1em;
+  }
+  @include extra-large {
+    font-size: get-extra-large-font-size(44);
+  }
+}
+.heading-l {
+  font-weight: 500;
+  font-size: 1.375rem;
+  line-height: 1.15em;
+  @include pre-tablet {
+    font-size: 2.125rem;
+    line-height: 1.21em;
+  }
+  @include extra-large {
+    font-size: get-extra-large-font-size(34);
+  }
+}
+.heading-m {
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.2em;
+  @include pre-tablet {
+    font-size: 1.75rem;
+  }
+  @include extra-large {
+    font-size: get-extra-large-font-size(28);
+  }
+}
+.heading-s {
+  font-weight: 500;
+  font-size: 1.063rem;
+  line-height: 1.2em;
+  @include pre-tablet {
+    font-size: 1.375rem;
+    line-height: 1.15em;
+  }
+  @include extra-large {
+    font-size: get-extra-large-font-size(22);
+  }
+}
+.heading-xs {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.2em;
+  @include pre-tablet {
+    font-size: 1.188rem;
+    line-height: 1.15em;
+  }
+  @include extra-large {
+    font-size: get-extra-large-font-size(19);
+  }
+}
+
+.heading-xxl_sm {
+  @include pre-tablet-reverse {
+    font-weight: 500;
+    font-size: 1.875rem;
+    line-height: 0.95em;
+  }
+}
+.heading-xl_sm {
+  @include pre-tablet-reverse {
+    font-weight: 500;
+    font-size: 1.625rem;
+    line-height: 1.05em;
+  }
+}
+.heading-l_sm {
+  @include pre-tablet-reverse {
+    font-weight: 500;
+    font-size: 1.375rem;
+    line-height: 1.15em;
+  }
+}
+.heading-m_sm {
+  @include pre-tablet-reverse {
+    font-weight: 500;
+    font-size: 1.125rem;
+  }
+}
+.heading-s_sm {
+  @include pre-tablet-reverse {
+    font-weight: 500;
+    font-size: 1.063rem;
+    line-height: 1.2em;
+  }
+}
+.heading-xs_sm {
+  @include pre-tablet-reverse {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.2em;
+  }
+}
+
+.text-l {
+  font-size: 1.125rem;
+  line-height: 1.3em;
+  @include pre-tablet {
+    font-size: 1.5rem;
+    line-height: 1.2em;
+  }
+  @include extra-large {
+    font-size: get-extra-large-font-size(24);
+  }
+}
+.text-m {
+  @include pre-tablet {
+    font-size: 1.125rem;
+    line-height: 1.3em;
+  }
+  @include extra-large {
+    font-size: get-extra-large-font-size(18);
+  }
+}
+.text-2s {
+  font-size: 1rem;
+  line-height: 1.4em;
+  @include pre-tablet {
+    font-size: 1.125rem;
+  }
+  @include extra-large {
+    font-size: get-extra-large-font-size(18);
+  }
+}
+.text-s {
+  font-size: 0.938rem;
+  line-height: 1.4em;
+  @include pre-tablet {
+    font-size: 1rem;
+  }
+  @include extra-large {
+    font-size: get-extra-large-font-size(16);
+  }
+}
+.text-xs {
+  font-size: 0.875rem;
+  line-height: 1.4em;
+  @include pre-tablet {
+    font-size: 0.938rem;
+  }
+  @include extra-large {
+    font-size: get-extra-large-font-size(15);
+  }
+}
+.text-xxs {
+  font-size: 0.75rem;
+  line-height: 1em;
+  @include pre-tablet {
+    font-size: 0.875rem;
+    line-height: 1.15em;
+  }
+  @include extra-large {
+    font-size: get-extra-large-font-size(12);
+  }
+}
+
+.text-s_sm {
+  @include pre-tablet-reverse {
+    font-size: 0.938rem;
+    line-height: 1.4em;
+  }
+}
+.text-l_sm {
+  @include pre-tablet-reverse {
+    font-size: 1.125rem;
+    line-height: 1.3em;
+  }
+}
+.text-xs_sm {
+  @include pre-tablet-reverse {
+    font-size: 0.875rem;
+    line-height: 1.4em;
+  }
+}
+.text-xxs_sm {
+  @include pre-tablet-reverse {
+    font-size: 0.75rem;
+    line-height: 1em;
+  }
+}
+
+.link-l {
+  font-size: 1.188rem;
+}
+.link-m {
+  font-size: 1rem;
+  @include pre-tablet {
+    font-size: 1rem;
+  }
+  @include extra-large {
+    font-size: get-extra-large-font-size(16);
+  }
+}
+.link-s {
+  font-size: 0.938rem;
+  @include pre-tablet {
+    font-size: 0.938rem;
+  }
+  @include extra-large {
+    font-size: get-extra-large-font-size(15);
+  }
+}
+.link-xs {
+  font-size: 0.875rem;
+  @include pre-tablet {
+    font-size: 0.875rem;
+  }
+  @include extra-large {
+    font-size: get-extra-large-font-size(14);
+  }
+}
+
+.link-xs__sm {
+  @include pre-tablet-reverse {
+    font-size: 0.875rem;
+  }
+}
+.link-s__sm {
+  font-size: 0.938rem;
+  @include pre-tablet-reverse {
+    font-size: 0.938rem;
+  }
+}
+.link-m__sm {
+  @include pre-tablet-reverse {
+    font-size: 1rem;
+  }
+}
+.link-l__sm {
+  @include pre-tablet-reverse {
+    font-size: 1.188rem;
+  }
+}
+.subtitle-xs {
+  font-size: 0.9375rem;
+  line-height: 1.4em;
+  @include pre-tablet {
+    font-size: 1rem;
+    line-height: 1.375em;
+  }
+  @include extra-large {
+    font-size: get-extra-large-font-size(16);
+  }
+}
+.subtitle-s {
+  font-size: 1rem;
+  line-height: 1.3em;
+  @include pre-tablet {
+    font-size: 1.125rem;
+  }
+  @include extra-large {
+    font-size: get-extra-large-font-size(18);
+  }
+}
+.subtitle-m {
+  font-size: 1.4rem;
+  line-height: 1.8em;
+  @include pre-tablet {
+    font-size: 1.05rem;
+    line-height: 1.4em;
+  }
+  @include extra-large {
+    font-size: get-extra-large-font-size(19);
+  }
+}
+.subtitle-l {
+  font-size: 1rem;
+  line-height: 1.31em;
+  @include pre-tablet {
+    font-size: 1.375rem;
+    line-height: 1.136em;
+  }
+  @include extra-large {
+    font-size: get-extra-large-font-size(22);
+  }
+}
+.subtitle-xl {
+  font-size: 1.0625rem;
+  line-height: 1.176em;
+  @include pre-tablet {
+    font-size: 1.5rem;
+    line-height: 1.2em;
+  }
+  @include extra-large {
+    font-size: get-extra-large-font-size(24);
+  }
+}
+.subtitle-xxl {
+  font-size: 1.125rem;
+  line-height: 1.33em;
+  @include pre-tablet {
+    font-size: 1.625rem;
+    line-height: 1.4em;
+  }
+  @include extra-large {
+    font-size: get-extra-large-font-size(26);
+  }
+}
+.subtitle-xs__sm {
+  @include pre-tablet-reverse {
+    font-size: 0.9375rem;
+    line-height: 1.4em;
+  }
+}
+.subtitle-s__sm {
+  @include pre-tablet-reverse {
+    font-size: 1rem;
+    line-height: 1.3em;
+  }
+}
+.subtitle-m_sm {
+  @include pre-tablet-reverse {
+    font-size: 1.4rem;
+    line-height: 1.8em;
+  }
+}
+.subtitle-l_sm {
+  @include pre-tablet-reverse {
+    font-size: 1rem;
+    line-height: 1.31em;
+  }
+}
+.subtitle-xl_sm {
+  @include pre-tablet-reverse {
+    font-size: 1.0625rem;
+    line-height: 1.176em;
+  }
+}
+.subtitle-xxl_sm {
+  @include pre-tablet-reverse {
+    font-size: 1.125rem;
+    line-height: 1.33em;
+  }
+}
+.caption-s {
+  font-size: 0.875rem;
+  line-height: 1.3em;
+  @include pre-tablet {
+    font-size: 0.875rem;
+    line-height: 1.4em;
+  }
+  @include extra-large {
+    font-size: get-extra-large-font-size(14);
+  }
+}
+.caption-xs {
+  font-size: 0.75rem;
+  line-height: 1.4em;
+}
+
+.caption-s__sm {
+  @include pre-tablet-reverse {
+    font-size: 0.875rem;
+    line-height: 1.3em;
+  }
+}
+.caption-xs__sm {
+  @include pre-tablet-reverse {
+    font-size: 0.75rem;
+    line-height: 1.4em;
+  }
+}
+
+.button-text {
+  font-size: 0.875rem;
+  line-height: 1.063em;
+  @include pre-tablet {
+    font-size: 1rem;
+    line-height: 1.188em;
+  }
+  @include extra-large {
+    font-size: get-extra-large-font-size(16);
+  }
+}

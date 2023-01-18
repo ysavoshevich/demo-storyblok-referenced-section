@@ -1,0 +1,8 @@
+@import "@styles/variables.scss";
+@import "@styles/mixins.scss";
+.homepage__title {
+  height: 32rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,113 @@
+@mixin breakpoint($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+          + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+@mixin pre-tablet {
+  @include breakpoint("sm") {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @include breakpoint("md") {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @include breakpoint("lg") {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @include breakpoint("xl") {
+    @content;
+  }
+}
+
+@mixin large {
+  @include breakpoint("2xl") {
+    @content;
+  }
+}
+
+@mixin extra-large {
+  @include breakpoint("3xl") {
+    @content;
+  }
+}
+
+@mixin widescreen {
+  @include breakpoint("xxl") {
+    @content;
+  }
+}
+
+@mixin breakpoint-reverse($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media (max-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+            + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+@mixin pre-tablet-reverse {
+  @include breakpoint-reverse("sm") {
+    @content;
+  }
+}
+
+@mixin tablet-reverse {
+  @include breakpoint-reverse("md") {
+    @content;
+  }
+}
+
+@mixin laptop-reverse {
+  @include breakpoint-reverse("lg") {
+    @content;
+  }
+}
+
+@mixin desktop-reverse {
+  @include breakpoint-reverse("xl") {
+    @content;
+  }
+}
+
+@mixin large-reverse {
+  @include breakpoint-reverse("2xl") {
+    @content;
+  }
+}
+
+@mixin extra-large-reverse {
+  @include breakpoint-reverse("3xl") {
+    @content;
+  }
+}
+
+@mixin widescreen-reverse {
+  @include breakpoint-reverse("xxl") {
+    @content;
+  }
+}

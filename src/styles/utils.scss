@@ -1,0 +1,81 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.bg-gainsboro {
+  background-color: $gainsboro;
+}
+
+.bg-isabelline {
+  background-color: $isabelline;
+}
+
+.bg-blue {
+  background-color: $blue;
+}
+
+.bg-blue-500 {
+  background-color: $blue-500;
+}
+
+.bg-space-cadet {
+  background-color: $space-cadet;
+}
+
+.bg-space-cadet-100 {
+  background-color: $space-cadet-100;
+}
+
+.bg-space-cadet-300 {
+  background-color: $space-cadet-300;
+}
+
+.bg-space-cadet-400 {
+  background-color: $space-cadet-400;
+}
+
+.bg-space-cadet-600 {
+  background-color: $space-cadet-600;
+}
+
+.text-white {
+  color: $white;
+}
+
+.d-none-sm-reverse {
+  @include pre-tablet-reverse {
+    display: none;
+  }
+}
+
+.d-none-lg-reverse {
+  @include laptop-reverse {
+    display: none;
+  }
+}
+
+.d-none-md {
+  @include tablet {
+    display: none !important;
+  }
+}
+
+.visually-hidden {
+  border: 0px;
+  clip: rect(0px, 0px, 0px, 0px);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+}
+
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

@@ -1,0 +1,10 @@
+/node_modules
+package.json
+yarn.lock
+
+# gatsby files
+.cache/
+public
+static/
+
+graphql.config.js
